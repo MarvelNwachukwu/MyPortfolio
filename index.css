@@ -4,9 +4,15 @@
 }
 
 header{
-    height: 10px;
+    height: 20px;
     width: 100%;
     background-color: rgb(135, 161, 184);
+    text-align: center;
+    box-shadow: 3px 3px 5px 6px rgb(31, 13, 13);  
+    border: none;
+}
+header p {
+  animation: header 2s infinite ease-in-out alternate-reverse;
 }
 
 .MyImages{
@@ -24,14 +30,14 @@ header{
     background-color: #4CAF50;
     color: white;
     padding: 16px;
+    padding-right: 3em;
     font-size: 16px;
     border: none;
     cursor: pointer;
     background-image: url(./assets/arrow-down-sign-to-navigate.svg);
     background-repeat: no-repeat;
-    background-position: right;
     background-size: 20%;
-   
+    background-position: right;
   }
   
   .dropdown {
@@ -69,6 +75,7 @@ header{
       height: 10px;
       width: 10px;
       margin-top: 25%;
+      
   }
 
   #contact a:nth-child(2){
@@ -107,6 +114,12 @@ header{
 
 
 @keyframes Profile{
+    0%{
+        background: url(./assets/IMG_20190825_141314253.jpg);
+        position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
     33%{
         background: url(https://lh3.googleusercontent.com/f6YMYx5ntt3EcixayAyK1kFg7S_0df_YhLEl7uDm7kh34VCcrXtgGRXKHU4u1vjTN8-J3BeAbDuG6381iS2d9F2SGExOIjjTn1vIrDu83XP5vWgrkp3VKmSwvnI17Ab0B_llNYR57yQKUgJblZX20Zo89sNbd1jIq8o2JiA29ReD7lhPfcdWEGcHNm8B8gqdrfr535HHEr-RpNO9CG3K79bJFtFqcJcRcBylZYwr4TH-R_O3B0Q_4PiRDQf6hLDcohnL2aNPYYbswg3KBtYrS3QQMpHnr3gZhGk6D3MXknucKJCWCF8y5J9iGBH-DtGLNysHp_HZudoPScJiRLv0_ncuWoWCpw3TYxvyVzv63I2scy66e_LF_rTF4Ch_beGlzgXLTf5ng2V1lZcrfQG_aQjw55N2PJ0vcd82JtABW0Hf-qMAGTLKM0HdK2tPWt-XwgS-2ZL7Pm7i5yi9BEvIzYwW486KFeZOxL4jLjdWXXnwRw1xyz0tiSt4_qYMAtVsiNahqwElB6ikCU4bhaS5x6jB1cqe78QGbDxLE8tqxIk5zAmmZx3fcxPgwv1KuAE8uLVxYB_KGmfL_Plxr-6fi7j4__GlSFZQ4E6F-zsgq87wuMNq7u_6Fh2huXFlTpCT_9yW8FgJXh6ahumPTovoFpif6LZipLMtVa6NN0NzISazxstPv-oTIVMYX5ku_63cEdCpOiP2gf7Mme82PpCFvI1JBGd6Gqmv2ccVhMieSKO3A3s=w557-h988-no);
         position: center;
@@ -129,4 +142,16 @@ header{
 
     }
     
+}
+
+@keyframes header{
+  From{
+    display: none;
+    
+  }
+  
+  To{
+    display: inline-block;
+    background-color: rgb(109, 36, 66);
+  }
 }
